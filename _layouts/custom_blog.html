@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="/assets/css/blog-style.css" />
+</head>
+<body class="collapsed">
+  <div class="layout">                <!--‑‑ NEW wrapper –‑>
+    <!-- open button -->
+    <button id="open-toc-btn" aria-label="Open contents">☰ Contents</button>
+
+    <!-- floating TOC panel -->
+    <nav class="toc-panel" id="toc-panel">
+      <button id="close-toc-btn" class="close-btn" aria-label="Close contents">✕</button>
+      <strong>On This Page</strong>
+      <nav id="toc"><!-- filled by JS --></nav>
+    </nav>
+
+    <!-- ▸───────────── Main content ───────────◂ -->
+    <main class="main">
+
+      <div class="controls">
+        <button id="theme-toggle">🌙 Dark</button>
+        <button id="font-inc">A+</button>
+        <button id="font-dec">A–</button>
+      </div>
+
+      <div class="container">
+        <div class="blog">
+          <a href="/" class="back-link">← Back&nbsp;to&nbsp;Home</a>
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/js/blogs.js"></script>
+</body>
+</html>

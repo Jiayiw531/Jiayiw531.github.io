@@ -1,0 +1,114 @@
+/* 0 –‑ layout variables */
+:root{
+    --sidebar-w: 30%;
+    --content-w: 70%;         /* (= 100 % – sidebar)  */
+    /* light‑mode defaults */
+    --bg-color:  #f9f9f9;
+    --text-color:#222;
+    --card-bg:   #fff;
+    --btn-bg:    #fff;
+    --btn-text:  #222;
+    --link-color:#007BFF;
+    --link-hover:#0056d2;
+    --base-font-size:16px;
+    --page-pad: 24px; /* space to keep at both edges */
+    --card-max: 840px; /* upper‑bound for the article width */
+  }
+  
+  /* dark‑mode overrides */
+  body.dark-mode{
+    --bg-color:#1e1e1e;
+    --text-color:#eaeaea;
+    --card-bg:#2c2c2c;
+    --btn-bg:#2c2c2c;
+    --btn-text:#eaeaea;
+    --link-color:#8ab4f8;
+    --link-hover:#a8c8ff;
+  }
+  
+  /* 1 –‑ CSS Grid skeleton */
+  body{
+    margin:0;
+    font-family:'Inter','Merriweather',sans-serif;
+    font-size:var(--base-font-size);
+    background:var(--bg-color);
+    color:var(--text-color);
+  }
+  .layout{
+    max-width: var(--card-max);
+    margin: 0 auto;
+    padding-inline: var(--page-pad);
+  }
+
+  
+    /* TOC panel – hidden by default */
+    .toc-panel{
+        position: fixed;
+        inset: 0 auto 0 0;       /* top:0; right:auto; bottom:0; left:0  */
+        width: min(30vw, 320px); /* ≈30 % but never wider than 320 px     */
+        background: var(--card-bg);
+        box-shadow: 4px 0 16px rgba(0,0,0,.15);
+        overflow-y: auto;
+        padding: 32px 24px 48px;
+        transform: translateX(-100%);
+        transition: transform .3s;
+        z-index: 1000;
+    }
+
+    /* body.show-toc toggles the slide‑in */
+    body.show-toc .toc-panel{ transform:none; }
+
+  /* universal button look */
+    button{
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    cursor: pointer;
+    padding: 6px 10px;
+    font: inherit;
+    transition: background .2s, color .2s;
+    }
+    button:hover{ filter: brightness(.95); }
+
+    /* hamburger position */
+    #open-toc-btn{
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    z-index: 1100;
+    }
+
+  
+  /* small close button inside the panel */
+  .toc-panel .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  
+  /* 4 –‑ content card */
+  .container{
+    width:100%;                    /* follow its column   */
+    max-width:var(--card-max);     /* never grow too wide */
+    margin:60px auto;              /* centre it           */
+    background:var(--card-bg);
+    padding:40px 30px;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,.1);
+    line-height:1.8;
+  }  
+  .blog img{
+    max-width:100%;
+    height:auto;
+    border-radius:8px;
+    display:block;
+    margin:1rem 0;
+  }
+  
+  /* headings & links */
+  h1{font-size:2.5rem;margin:10px 0;color:var(--text-color);}
+  .blog a{color:var(--link-color);text-decoration:none;transition:color .2s;}
+  .blog a:hover{color:var(--link-hover);text-decoration:underline;}
+  

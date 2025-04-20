@@ -1,0 +1,90 @@
+body {
+    font-family: 'Consolas', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px; 
+    margin-bottom: 20px;
+}
+.intro-text {
+    flex: 1;
+}
+
+h1 {
+    color: #222;
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    color: #555;
+}
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+.link-no-underline {
+    text-decoration: none;
+    color: inherit; 
+    font-style: italic;
+}
+.copy-button {
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+.copy-button:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+button.copy-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
