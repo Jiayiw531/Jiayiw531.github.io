@@ -30,7 +30,7 @@ While I greatly enjoy my life here, there are things I wish I had notice before 
 - Do you have a **private room or shared space**?
 - Kitchen, washer/dryer, microwave, etc. ?
 
-![My single room in Tokodai dorm—bed, desk, and tiny fridge](https://students.isct.ac.jp/cms/component/data/5927/3ec5e98dcc4afd4f84be8512f1f9dc80.webp)
+![A single room in Tokodai dorm—bed, desk, and tiny fridge](https://students.isct.ac.jp/cms/component/data/5927/3ec5e98dcc4afd4f84be8512f1f9dc80.webp)
 
 > My room looked like this
 
@@ -73,7 +73,8 @@ While I greatly enjoy my life here, there are things I wish I had notice before 
 
 **Extra Reads While You Pack** 
 
-[Living Alone in a Foreign Countryside](#) *a valuable and somewhat vulnerable self reflection that is only done in a rural Japanese town alone*  
+[Living Alone in a Foreign Countryside](#) *is a valuable and somewhat vulnerable self reflection done during a year in rural Japan*  
 
 ---
 
+Interested in Exchange from GT / to Japan? Feel free to [contact me](mailto:jiayiw@gatech.edu)!
