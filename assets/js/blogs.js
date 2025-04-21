@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const body     = document.body;
   
     open.addEventListener('click', ()=> body.classList.toggle('show-toc'));
+    open.addEventListener('click', ()=> open.style.display = 'none');
     close.addEventListener('click',()=> body.classList.remove('show-toc'));
+    close.addEventListener('click',()=> open.style.display = 'block');
     
     /* 2‑C  –  Dark / light toggle */
     const themeBtn = document.getElementById('theme-toggle');

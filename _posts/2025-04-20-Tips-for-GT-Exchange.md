@@ -39,8 +39,6 @@ While I greatly enjoy my life here, there are things I wish I had notice before 
 - Do you get to pick your dorm, or is it assigned?
 - Timing the **daily commute** now saves headaches later. 
 
-> FYI, my commute time from dorm to main campus for daily lessons takes 80 minutes one-way. 
-
 ---
 
 ## Tokyo Tech‑Specific 
@@ -54,7 +52,7 @@ While I greatly enjoy my life here, there are things I wish I had notice before 
 
   [disclaimer: this assumption is made purely out of observation and please confirm with host school]
 
-![img](https://students.isct.ac.jp/cms/component/data/5927/00068d2e2b7e7565074d72bfab5fc619.webp)
+![Map of Tokyo Tech Dorm locations](https://students.isct.ac.jp/cms/component/data/5927/00068d2e2b7e7565074d72bfab5fc619.webp)
 
 **Suggested link:** [Tokyo Tech Dorm Info](https://students.isct.ac.jp/en/012/student-life-and-support/dormitories-and-accommodation/dormitories)
 
@@ -65,15 +63,16 @@ While I greatly enjoy my life here, there are things I wish I had notice before 
 **Suggested image:** Map showing the distance to central Tokyo (e.g., Shibuya).
 
 ### Language Preparation
-- Yes, you *can* survive on English, but knowing hiragana, katakana, and a handful of kanji makes daily life so much smoother—think grocery labels and train boards.
+- Yes, you *can* survive on English, but knowing hiragana, katakana, and a handful of kanji makes daily life so much smoother—think grocery labels and direction plates.
 
-> **Suggested image:** A regular station name board at a Japanese train station, noting that while there are English labels, kanji is larger, and English often consists of simple Japanese pronunciations.
+![Oookayama Station Name Plate](https://feelfree.tokyo/wp-content/uploads/2024/10/image-3.jpg?v=1727969857)
+> A station name plate you could find anywhere. Kanjis and hiraganas are in major displays. 
 
 ---
 
 **Extra Reads While You Pack** 
 
-[Living Alone in a Foreign Countryside](#) *is a valuable and somewhat vulnerable self reflection done during a year in rural Japan*  
+[Living Alone in a Foreign Countryside](#) *is a valuable self reflection done during my year in rural Japan*  
 
 ---
 

@@ -12,7 +12,9 @@
     --link-hover:#0056d2;
     --base-font-size:16px;
     --page-pad: 24px; /* space to keep at both edges */
-    --card-max: 840px; /* upper‑bound for the article width */
+    --card-pad: 30px; /* space inside the card */
+    --quote-bg:   #f1f4ff;   /* light tint behind blockquotes   */
+    --quote-bar:  #4c7dff;   /* left bar colour (light)         */
   }
   
   /* dark‑mode overrides */
@@ -24,6 +26,8 @@
     --btn-text:#eaeaea;
     --link-color:#8ab4f8;
     --link-hover:#a8c8ff;
+    --quote-bg-d: #2a2d39;   /* dark‑mode tint                  */
+    --quote-bar-d:#8ab4f8;   /* left bar colour (dark)          */
   }
   
   /* 1 –‑ CSS Grid skeleton */
@@ -40,6 +44,26 @@
     padding-inline: var(--page-pad);
   }
 
+  /* 1‑bis – stack main section + right‑aligned controls
+   -------------------------------- */
+    .main{
+        display:flex;
+        flex-direction:column;    /* vertical stack */
+        align-items:center; 
+        width: var(--content-w);
+        margin-inline:auto;  
+    }
+    
+    .controls{
+        display:flex;             /* row of buttons  */
+        width:100%;
+        gap: 8px;           /* space between buttons */
+        margin-inline:60px auto;  
+        /* max-width: calc(var(--card-max) + 2*var(--card-pad)); 840 + 60 = 900 */
+        justify-content: flex-end; /* space between buttons */
+        margin-top:20px;
+    }
+
   
     /* TOC panel – hidden by default */
     .toc-panel{
@@ -53,6 +77,16 @@
         transform: translateX(-100%);
         transition: transform .3s;
         z-index: 1000;
+    }
+
+    .toc-panel a{
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color .2s;
+    }
+    .toc-panel a:hover{
+        color: var(--link-hover);
+        text-decoration: underline;
     }
 
     /* body.show-toc toggles the slide‑in */
@@ -75,7 +109,7 @@
     /* hamburger position */
     #open-toc-btn{
     position: fixed;
-    top: 70px;
+    top: 20px;
     left: 20px;
     z-index: 1100;
     }
@@ -99,6 +133,30 @@
     box-shadow:0 4px 20px rgba(0,0,0,.1);
     line-height:1.8;
   }  
+
+  .blog blockquote{
+    margin: 1.6em 0;
+    padding: 0.2em 0.9em;
+    background: var(--quote-bg);
+    border-left: 4px solid var(--quote-bar);
+    border-radius: 6px;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--text-color);
+  }
+  
+  body.dark-mode .blog blockquote{
+    background: var(--quote-bg-d);
+    border-left-color: var(--quote-bar-d);
+  }
+
+  .blog q{
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+  }
+  .blog q::before{ content: open-quote; }
+  .blog q::after { content: close-quote; }
+
   .blog img{
     max-width:100%;
     height:auto;
